@@ -119,5 +119,16 @@ STATIC_URL = '/static/'
 if DEBUG:
     CSP_STYLE_SRC = ("'self'", "'unsafe-inline'")
 
+# A few examples to simplify the Content Security Policy set up
+# for more info http://django-csp.readthedocs.org/en/latest/configuration.html
+# CSP_DEFAULT_SRC = ("'self'", "www.example.com")
+# CSP_SCRIPT_SRC = ("'self'", "*.google-analytics.com")
+# CSP_IMG_SRC = ("'self'", "img.example.com")
+# CSP_OBJECT_SRC = ("'self'", "www.example.com")
+# CSP_MEDIA_SRC = ("'self'", "media.example.com")
+# CSP_FRAME_SRC = ("'self'", "www.youtube.com")
+# CSP_STYLE_SRC = ("'self'", "fonts.googleapis.com")
+# CSP_CONNECT_SRC = ("'self'", "ajax.example.com")
+
 
 from djangae.contrib.gauth.settings import *
